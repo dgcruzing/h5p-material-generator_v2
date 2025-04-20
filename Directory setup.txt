@@ -1,0 +1,19 @@
+h5p-material-generator/
+├── app.py                    # Main Streamlit entry point
+├── README.md                 # Updated documentation
+├── LICENSE                   # Existing license file
+├── requirements.txt          # Dependencies list
+├── setup.py                  # Package installation
+├── .env.example              # Example environment variables
+├── tests/                    # Test directory
+│   ├── __init__.py
+│   ├── test_api_clients.py
+│   ├── test_db_manager.py
+│   └── test_h5p_builder.py
+└── h5p_generator/            # Main package
+    ├── __init__.py           # Version and package info
+    ├── config.py             # Configuration management
+    ├── db_manager.py         # Database operations
+    ├── api_clients.py        # API client implementations
+    ├── h5p_builder.py        # H5P package generation
+    └── utils.py              # Utility functions

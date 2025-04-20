@@ -1,0 +1,28 @@
+// Root .cursorrules for the H5P Material Generator Project
+// This file provides high-level AI guidance and imports modular rule sets.
+
+// 📦 Project Overview
+// - FastAPI backend generating interactive H5P learning content
+// - Structured around service-based architecture in `h5_generator/`
+// - Uses Python 3.11, SQLAlchemy, and external API integrations
+// - Prioritizes maintainability, clear interfaces, and modularity
+
+// 📘 Imported Rule Modules
+
+@import .cursor_rules/python.mdc           // General Python idioms, module structure, typing
+@import .cursor_rules/fastapi.mdc          // Routing, dependency injection, API design in FastAPI
+@import .cursor_rules/database.mdc         // SQLAlchemy models, session handling, migrations
+@import .cursor_rules/codequality.mdc      // Style conventions, error handling, naming
+@import .cursor_rules/clean-code.mdc       // Separation of concerns, clarity, and abstraction
+
+// ⚙️ Cursor AI Guidance
+// - Use consistent service-function-schema layering for all API features
+// - Generate new features by following the pattern used in `h5p_builder.py`
+// - Do not write large functions — prefer composition and single-responsibility
+// - Surface shared logic into `utils.py` when reused more than twice
+// - Avoid unnecessary abstractions — keep the architecture readable and traceable
+// - Respect `.env.example` for all config handling — no hardcoded keys
+
+// 📌 Cursor Notes
+// This file will be appended to Cursor’s global rules when working in this repo.
+// Use it to guide AI completions and ensure consistency across all contributors.

@@ -1,0 +1,4 @@
+{
+    "cursor.general.disableHttp2": false,
+    "python.analysis.indexing": true
+}
